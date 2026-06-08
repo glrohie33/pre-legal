@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media print {
+  .container {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,124 @@
+.wrapper {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px 60px;
+}
+
+.page {
+  width: 100%;
+  max-width: 800px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow), 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 72px 80px;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.docTitle {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.docSubtitle {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.parties {
+  margin-bottom: 28px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionHeading {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.para {
+  text-align: justify;
+}
+
+.blank {
+  display: inline-block;
+  border-bottom: 1px solid #aaa;
+  min-width: 140px;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.filled {
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-text);
+  border-bottom: none;
+}
+
+.signatureBlock {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.sigParty {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sigLine {
+  border-top: 1px solid var(--color-text);
+  padding-top: 6px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.sigName {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 24px 0;
+}
+
+@media print {
+  .wrapper {
+    height: auto;
+    overflow: visible;
+    background: white;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 60px;
+    font-size: 12px;
+  }
+}
